@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "title": "Comparative Analysis: Q3 2025 Reports",
+    "author": "Analytical Agent",
+    "date": "2026-01-18"
+  },
+  "blocks": [
+    {
+      "type": "h1",
+      "text": "A. Common Themes Across Reports"
+    },
+    {
+      "type": "h2",
+      "text": "Operational trends"
+    },
+    {
+      "type": "h3",
+      "text": "Restructuring, efficiency measures and rightsizing"
+    },
+    {
+      "type": "p",
+      "text": "Description: Companies report targeted measures to reduce costs, restructuring charges and ongoing rightsizing to strengthen operational efficiency and long-term competitiveness."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; SKF; Trelleborg; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: mixed"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"initiating a number of targeted measures ... cost savings of just over SEK 200 million per year\"",
+        "Evidence: Atlas Copco: \"included an MSEK -152 restructuring cost in the Vacuum Technique business\"",
+        "Evidence: Sandvik: \"IAC of SEK -643 million, comprising of structural measures within Machining\"",
+        "Evidence: SKF: \"rightsizing initiatives continues at high pace\"",
+        "Evidence: Trelleborg: \"Items affecting comparability ... restructuring costs\"",
+        "Evidence: Volvo: \"Adjustments ... Transformation to zero-emission vehicles\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Mergers, acquisitions and divestments"
+    },
+    {
+      "type": "p",
+      "text": "Description: Many reports highlight active M&A and bolt-on acquisitions and some divestments as strategic moves to strengthen portfolios and target growth segments."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Atlas Copco; Sandvik; Trelleborg; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: positive"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Atlas Copco: \"The following acquisitions were closed in the quarter\" and long list of deals",
+        "Evidence: Sandvik: \"completed ten acquisitions\" and list of 2025 acquisitions",
+        "Evidence: Trelleborg: \"acquisition of Masterseals ... finalized\"",
+        "Evidence: Volvo: \"divestment of its ownership stake in SDLG ... positive effect of SEK 811 M\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Investments, capacity and production adjustments"
+    },
+    {
+      "type": "p",
+      "text": "Description: Companies report capex increases, capacity optimization, plant openings or temporary production adjustments to match market and strategic needs."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; SKF; Trelleborg; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: mixed"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"increased investments\" and capex SEK -289 in quarter",
+        "Evidence: Atlas Copco: \"Net investments in rental equipment were MSEK -487 ... property, plant and equipment MSEK -851\"",
+        "Evidence: Sandvik: \"Investments in tangible and intangible assets (capex) amounted to SEK 0.8 billion\"",
+        "Evidence: SKF: \"new global Super-precision bearing centre in Italy\"",
+        "Evidence: Trelleborg: \"factory inaugurations are planned in Vietnam and Costa Rica\"",
+        "Evidence: Volvo: \"production rates being raised before summer ... production adjustments\""
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "External factors"
+    },
+    {
+      "type": "h3",
+      "text": "Currency headwinds and translation effects"
+    },
+    {
+      "type": "p",
+      "text": "Description: All reports highlight significant negative impacts from exchange rate movements on revenues or operating income."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; SKF; Trelleborg; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: negative"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"currency effects of SEK -41 million\" on adjusted EBIT",
+        "Evidence: Atlas Copco: \"Changes in exchange rates had a negative effect of MSEK 1 695\" YTD",
+        "Evidence: Sandvik: \"Exchange rate had a negative impact of SEK 218 million\"",
+        "Evidence: SKF: \"currency headwind ... negative SEK 90 m on EBITA\"",
+        "Evidence: Trelleborg: \"The exchange rate effect ... had a negative impact of SEK 189 m on EBITA\"",
+        "Evidence: Volvo: \"currency movements had a negative impact of SEK 1,626 M\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Trade policy, tariffs and tariffs mitigation"
+    },
+    {
+      "type": "p",
+      "text": "Description: Several companies discuss trade policy turbulence, tariffs and steps taken to mitigate impacts (surcharges, rerouting, price actions)."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; SKF; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: mixed"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"trade policy turbulence\" noted in market conditions",
+        "Evidence: Atlas Copco: \"increased costs related to trade tariffs... mitigated\" and \"tariff levels\"",
+        "Evidence: Sandvik: \"Tariff surcharges were implemented ... to mitigate current tariff levels\"",
+        "Evidence: SKF: \"Section 232 Tariffs ... we expect in Q4 to largely compensate\"",
+        "Evidence: Volvo: \"net tariff impact was negative ... expected to be approximately SEK 1 billion in Q4\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Raw material and metal price effects"
+    },
+    {
+      "type": "p",
+      "text": "Description: Metal and alloy price effects and raw material cost volatility are called out as impacts on gross margin and adjusted results."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Sandvik; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: negative"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"metal price effects had an impact of SEK -70 million\"",
+        "Evidence: Sandvik: \"global trade restrictions on tungsten powder ... led to stricter supplies and significant price increases\" (positive effect for Sandvik)",
+        "Evidence: Volvo: \"increased material ... costs\" negatively affected adjusted operating income"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Demand and order-related commentary"
+    },
+    {
+      "type": "h3",
+      "text": "Regional demand differences and customer caution"
+    },
+    {
+      "type": "p",
+      "text": "Description: Multiple reports describe mixed demand across regions: weakness in Europe or North America for some businesses, strength in Asia/Medical/Mining for others; a cautious customer stance is often noted."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; SKF; Trelleborg; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: mixed"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"weakness in Europe and North America ... cautious attitude among customers, especially in Europe\"",
+        "Evidence: Atlas Copco: \"demand was mixed ... increased in the Americas and Europe, basically unchanged in Asia\"",
+        "Evidence: Sandvik: \"Demand in Mining remained very strong ... Infrastructure market remained subdued\"",
+        "Evidence: SKF: \"Industrial business grew 4% ... Automotive declined -2%\"",
+        "Evidence: Trelleborg: \"Industrial business grew 4% ... Automotive declined -2%\"",
+        "Evidence: Volvo: \"European truck market replacement-driven ... North America long-haul freight market remains in recession\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Service and aftermarket resilience"
+    },
+    {
+      "type": "p",
+      "text": "Description: Service businesses are highlighted as a source of stability and growth, supporting margins and cash generation."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Atlas Copco; Sandvik; Volvo; Alleima; SKF"
+    },
+    {
+      "type": "p",
+      "text": "Tone: positive"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Atlas Copco: \"demand for service ... order intake increased in all regions\"",
+        "Evidence: Sandvik: \"The aftermarket business held up well ... Parts and Services reached an all-time high\"",
+        "Evidence: Volvo: \"service sales growing by 4%\"",
+        "Evidence: Alleima: \"Free operating cash flow ... impacted by ... increased investments\" while service noted as resilient",
+        "Evidence: SKF: \"Service sales increased by 4% adjusted for currency\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Order backlog and book-to-bill mentions"
+    },
+    {
+      "type": "p",
+      "text": "Description: Reports reference order intake, rolling 12-month metrics, book-to-bill, and backlog visibility in key segments."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: neutral"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"Order intake for the rolling 12-month period amounted to SEK 18,665\" and \"Book-to-bill was 97%\"",
+        "Evidence: Atlas Copco: \"Orders received ... organically unchanged\" and geographic breakdown",
+        "Evidence: Sandvik: \"Book-to-bill of 105%\" and detailed order intake by division",
+        "Evidence: Volvo: \"net order intake for heavy-duty trucks declined by 15%\" and backlog commentary"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Cost or margin-related commentary"
+    },
+    {
+      "type": "h3",
+      "text": "Price, mix and pricing actions"
+    },
+    {
+      "type": "p",
+      "text": "Description: Companies report price and mix execution as a key driver offsetting cost inflation and supporting margins."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Sandvik; Atlas Copco; SKF; Volvo; Trelleborg"
+    },
+    {
+      "type": "p",
+      "text": "Tone: positive"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"price leadership\" and \"price management\" references",
+        "Evidence: Sandvik: \"Good price execution and savings\"",
+        "Evidence: Atlas Copco: \"margin was positively affected by currency, while increased costs related to trade tariffs and dilution from acquisitions affected the margin negatively\"",
+        "Evidence: SKF: \"price and mix contribution\"",
+        "Evidence: Volvo: \"good price realization\"",
+        "Evidence: Trelleborg: \"price/mix contribution, driven by pricing activities and portfolio management\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Inflation, labor costs and manufacturing underabsorption"
+    },
+    {
+      "type": "p",
+      "text": "Description: Reports highlight wage inflation, underabsorption and volume-related inefficiencies as pressure points on margins."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; SKF; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: negative"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"impacted by a weaker Europe and the extended maintenance stoppage... underabsorption\"",
+        "Evidence: Atlas Copco: \"lower revenue volumes and increased costs related to trade tariffs affected the margin negatively\"",
+        "Evidence: Sandvik: \"wage inflation, volume related cost inefficiencies and tariffs\"",
+        "Evidence: SKF: \"lower manufacturing volumes as well as a significant currency headwind\"",
+        "Evidence: Volvo: \"increased material, manufacturing and tariff costs\""
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Adjusted results and items affecting comparability (IAC)"
+    },
+    {
+      "type": "p",
+      "text": "Description: Several companies present adjusted operating profit metrics and disclose items affecting comparability such as divestments, impairments and restructuring."
+    },
+    {
+      "type": "p",
+      "text": "Companies: Alleima; Atlas Copco; Sandvik; SKF; Trelleborg; Volvo"
+    },
+    {
+      "type": "p",
+      "text": "Tone: neutral"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Evidence: Alleima: \"Adjusted operating profit (EBIT) excludes items affecting comparability\"",
+        "Evidence: Atlas Copco: \"Adjusted operating profit decreased 6% ... Adjusted operating profit was MSEK 8 862\"",
+        "Evidence: Sandvik: \"Items affecting comparability amounted to SEK 63 million (-455) in Q3 2025\"",
+        "Evidence: SKF: \"Items affecting comparability were high in the quarter at approximately MSEK 750\"",
+        "Evidence: Trelleborg: \"Items affecting comparability for the quarter totaled SEK -72 m\"",
+        "Evidence: Volvo: \"In Q3 2025, a positive effect of SEK 811 M was excluded from adjusted operating income\""
+      ]
+    },
+    {
+      "type": "h1",
+      "text": "B. Notable Differences"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Sandvik shows sector-specific strong growth (Mining, BEV) whereas Volvo highlights truck market softness in North America; Sandvik emphasizes record orders in Mining while Volvo reports declining truck orders versus a year ago",
+        "Volvo reports a large one-off positive effect from divesting SDLG (SEK 811 M) whereas several peers report multiple acquisitions as growth strategy (Atlas Copco, Sandvik)",
+        "Atlas Copco emphasizes very strong operating cash flow and large M&A list; Volvo reports significant net financial position and detailed leverage metrics",
+        "SKF and Trelleborg place explicit emphasis on sustainability milestones (SBTi, EcoVadis, CO2 targets), while others mention sustainability but with less prominence in these quarters",
+        "Company-specific operational events differ: Alleima reports an extended maintenance stoppage impacting earnings; Volvo and Sandvik report product launches and safety ratings (Euro NCAP) — unique operational impacts per company"
+      ]
+    },
+    {
+      "type": "h1",
+      "text": "C. Company Coverage Summary"
+    },
+    {
+      "type": "table",
+      "caption": "Coverage of themes by company",
+      "columns": [
+        "Company",
+        "Operational trends",
+        "External factors",
+        "Demand & orders",
+        "Cost & margins"
+      ],
+      "rows": [
+        [
+          "Alleima",
+          "Restructuring and efficiency; capacity adjustments",
+          "Currency headwind; trade policy turbulence",
+          "Rolling 12-month order intake down; seg. differences (Nuclear, Medical)",
+          "Metal price effects; margin decline; price leadership"
+        ],
+        [
+          "Atlas Copco",
+          "Targeted measures; many acquisitions",
+          "Tariffs and trade policy; currency negative impact",
+          "Mixed demand by division; service growth",
+          "Price/mix actions; tariffs mitigation; margin pressure"
+        ],
+        [
+          "Sandvik",
+          "Acquisitions; investments and capacity; rightsizing",
+          "Tariffs; currency headwind; supply constraints",
+          "Strong mining orders; aftermarket growth; BEV momentum",
+          "Price execution offsetting inflation; IACs for restructuring"
+        ],
+        [
+          "SKF",
+          "Rightsizing; investments in automation; capacity moves",
+          "Currency headwinds; tariffs; trade uncertainty",
+          "Mixed demand: Industrial up, Automotive down; service resilience",
+          "Price/mix support; cost control; IACs and restructuring costs"
+        ],
+        [
+          "Trelleborg",
+          "Bolt-on acquisitions; factory inaugurations; efficiency measures",
+          "Currency impacts; tariffs mentioned",
+          "Industrial growth; weaker Automotive; aftermarket resilience",
+          "Price/mix contribution; restructuring IACs; margin resilience"
+        ],
+        [
+          "Volvo",
+          "Divestment of SDLG; capacity adjustments; product launches",
+          "Tariffs; currency negative impact; material cost inflation",
+          "Truck market regional divergence; order backlog comments",
+          "Price/mix realization; tariff and material cost impacts; IACs"
+        ]
+      ]
+    },
+    {
+      "type": "pagebreak"
+    }
+  ]
+}
