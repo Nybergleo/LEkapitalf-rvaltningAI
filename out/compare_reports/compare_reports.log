@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.17)  18 JAN 2026 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.17)  18 JAN 2026 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -416,7 +416,8 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
-) (compare_reports.aux)
+)
+No file compare_reports.aux.
 \openout1 = `compare_reports.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -437,7 +438,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -497,8 +497,6 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 Package hyperref Info: Link coloring OFF on input line 23.
-
-(compare_reports.out) (compare_reports.out)
 \@outlinefile=\write3
 \openout3 = `compare_reports.out'.
 
@@ -572,25 +570,32 @@ pData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [2] [3] [4] [5]
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
-Package rerunfilecheck Info: File `compare_reports.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+Package rerunfilecheck Warning: File `compare_reports.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `compare_reports.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13151 strings out of 467871
- 214403 string characters out of 5418376
- 672993 words of memory out of 5000000
- 41713 multiletter control sequences out of 15000+600000
- 682420 words of font info for 124 fonts, out of 8000000 for 9000
+ 13136 strings out of 467871
+ 213964 string characters out of 5418376
+ 678004 words of memory out of 5000000
+ 41711 multiletter control sequences out of 15000+600000
+ 682171 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,8n,93p,1523b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,8n,93p,1523b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/leony/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
 b><C:/Users/leony/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
 b><C:/Users/leony/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb
 ><C:/Users/leony/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
 <C:/Users/leony/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
-Output written on compare_reports.pdf (5 pages, 163686 bytes).
+Output written on compare_reports.pdf (5 pages, 161946 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
  32769 words of extra memory for PDF output out of 35830 (max. 10000000)
 

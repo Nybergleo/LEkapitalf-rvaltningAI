@@ -2,28 +2,25 @@ from pathlib import Path
 from openai import OpenAI
 from tqdm import tqdm
 
-### Helpers ###
-
 client = OpenAI()
 
-def load_inputs(prompt_filename: str):
+def load_prompt(prompt_filename: str) -> str:
     base = Path(__file__).resolve().parent
-    reports_dir = base / "reports"
-    prompts_dir = base / "prompts"
-
-    pdf_paths = sorted(reports_dir.glob("*.pdf"))
-    if not pdf_paths:
-        raise FileNotFoundError(f"No PDFs found in: {reports_dir}")
-
-    prompt_path = prompts_dir / prompt_filename
+    prompt_path = base / "prompts" / prompt_filename
     if not prompt_path.exists():
         raise FileNotFoundError(f"Prompt file not found: {prompt_path}")
-
-    prompt_text = prompt_path.read_text(encoding="utf-8")
-    return pdf_paths, prompt_text
+    return prompt_path.read_text(encoding="utf-8")
 
 
 def upload_pdfs(pdf_paths):
+    pdf_paths = [Path(p) for p in pdf_paths]
+    if not pdf_paths:
+        raise FileNotFoundError("No PDFs provided.")
+
+    missing = [p for p in pdf_paths if not p.exists()]
+    if missing:
+        raise FileNotFoundError(f"These PDFs do not exist: {missing}")
+
     file_ids = []
     for pdf in tqdm(pdf_paths, desc="Uploading PDFs"):
         with open(pdf, "rb") as f:
@@ -31,15 +28,16 @@ def upload_pdfs(pdf_paths):
         file_ids.append(created.id)
     return file_ids
 
-### Helpers end ###
 
-
-# General prompting via pdfs and txt framework
-def run_prompt_over_reports(prompt_filename: str, status: str, user_input: str | None = None):
-    pdf_paths, prompt_text = load_inputs(prompt_filename)
+def run_prompt_over_reports(
+    prompt_filename: str,
+    status: str,
+    pdf_paths,                      # <-- passed in by caller
+    user_input: str | None = None,):
+    
+    prompt_text = load_prompt(prompt_filename)
     file_ids = upload_pdfs(pdf_paths)
 
-    # Prepend user-provided text (e.g. keywords) before the prompt
     if user_input:
         prompt_text = user_input.rstrip() + "\n\n" + prompt_text.lstrip()
 
@@ -48,45 +46,39 @@ def run_prompt_over_reports(prompt_filename: str, status: str, user_input: str |
 
     print(status)
 
-    #TODO: actually fix unicode characters.
-
-    #This is a quickfix for unicode chars!
-
     system_text = """
-    ABSOLUTE RULES:
-    - Output MUST be valid JSON only. No markdown. No extra text.
-    - Output MUST contain only plain ASCII characters. Do not use Unicode (no “ ” ’ … – — • ₂ etc).
-    Use replacements: "quotes", 'apostrophe', "...", "-", "CO2".
-    - JSON MUST follow the schema exactly:
-    { "meta": { "title": str, "author": str, "date": str }, "blocks": [ ... ] }
-    - Allowed block types: h1, h2, h3, p, bullets, numbered, table, pagebreak.
-    - For bullets/numbered blocks: always include "items": [string, ...]. Never use "text" for these.
-    - For h1/h2/h3/p blocks: always include "text": string.
-    - For table blocks: always include "columns": [string,...] and "rows": [[string,...],...].
-    - If unsure how to format something, use a "p" block (never invent new block types).
-    """
-
-
+ABSOLUTE RULES:
+- Output MUST be valid JSON only. No markdown. No extra text.
+- Output MUST contain only plain ASCII characters. Do not use Unicode (no “ ” ’ … – — • ₂ etc).
+Use replacements: "quotes", 'apostrophe', "...", "-", "CO2".
+- JSON MUST follow the schema exactly:
+{ "meta": { "title": str, "author": str, "date": str }, "blocks": [ ... ] }
+- Allowed block types: h1, h2, h3, p, bullets, numbered, table, pagebreak.
+- For bullets/numbered blocks: always include "items": [string, ...]. Never use "text" for these.
+- For h1/h2/h3/p blocks: always include "text": string.
+- For table blocks: always include "columns": [string,...] and "rows": [[string,...],...].
+- If unsure how to format something, use a "p" block (never invent new block types).
+""".strip()
 
     response = client.responses.create(
         model="gpt-5-mini",
-        input=[{"role": "system", "content": [{"type": "input_text", "text": system_text.strip()}]},{"role": "user", "content": content}],
+        input=[
+            {"role": "system", "content": [{"type": "input_text", "text": system_text}]},
+            {"role": "user", "content": content},
+        ],
     )
     return response.output_text
 
 
+# Convenience wrappers now REQUIRE pdf_paths
+def compare_reports(pdf_paths):
+    return run_prompt_over_reports("CompareReports.txt", "Comparing reports...", pdf_paths)
 
-#The different prompt functions
-def compare_reports():
-    return run_prompt_over_reports("CompareReports.txt", "Comparing reports...")
+def keyword_analysis(pdf_paths, user_input: str):
+    return run_prompt_over_reports("KeywordAnalysis.txt", "Running keyword analysis...", pdf_paths, user_input)
 
-
-def keyword_analysis(user_input: str):
-    return run_prompt_over_reports("KeywordAnalysis.txt", "Running keyword analysis...", user_input)
-
-
-def individual_analysis():
-    return run_prompt_over_reports("IndividualAnalysis.txt", "Running individual analyses...")
+def individual_analysis(pdf_paths):
+    return run_prompt_over_reports("IndividualAnalysis.txt", "Running individual analyses...", pdf_paths)
 
 
 def main():

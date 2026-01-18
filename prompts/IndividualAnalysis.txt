@@ -60,7 +60,7 @@ REQUIRED DOCUMENT STRUCTURE (IN THIS EXACT ORDER)
     - Revenue
     - Organic growth
     - FX impact
-    - Acquisitions/divestments impact
+    - Acquisitions / divestments impact
     - EBIT / Adjusted EBIT
     - EBIT margin / Adjusted margin
     - EPS
