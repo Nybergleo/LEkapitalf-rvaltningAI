@@ -6,7 +6,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgraphite2-3 libharfbuzz0b \
   && rm -rf /var/lib/apt/lists/*
 
-
 # Install tectonic (LaTeX engine)
 RUN curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh \
  && mv tectonic /usr/local/bin/tectonic
@@ -21,4 +20,5 @@ COPY . .
 ENV PORT=8080
 EXPOSE 8080
 
-CMD ["bash", "-lc", "uvicorn app:app --host 0.0.0.0 --port ${PORT}"]
+# IMPORTANT: your FastAPI app lives in api.py (module "api") and is named "app"
+CMD ["bash", "-lc", "uvicorn api:app --host 0.0.0.0 --port ${PORT}"]

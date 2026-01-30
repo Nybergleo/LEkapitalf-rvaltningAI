@@ -13,8 +13,8 @@ from fastapi import FastAPI, File, Form, UploadFile, HTTPException
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from analysis_client import compare_reports, keyword_analysis, individual_analysis
-from json_to_pdf_via_latex import write_pdf_from_json_text
+from services.analysis_client import compare_reports, keyword_analysis, individual_analysis
+from services.json_to_pdf_via_latex import write_pdf_from_json_text
 
 
 

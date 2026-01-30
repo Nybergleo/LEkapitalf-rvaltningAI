@@ -1,12 +1,19 @@
+from __future__ import annotations
+
 from pathlib import Path
+
 from openai import OpenAI
 from tqdm import tqdm
 
 client = OpenAI()
 
+# Project root is one level above /services
+BASE_DIR = Path(__file__).resolve().parents[1]  # /app
+PROMPTS_DIR = BASE_DIR / "prompts"
+
+
 def load_prompt(prompt_filename: str) -> str:
-    base = Path(__file__).resolve().parent
-    prompt_path = base / "prompts" / prompt_filename
+    prompt_path = PROMPTS_DIR / prompt_filename
     if not prompt_path.exists():
         raise FileNotFoundError(f"Prompt file not found: {prompt_path}")
     return prompt_path.read_text(encoding="utf-8")
@@ -32,9 +39,9 @@ def upload_pdfs(pdf_paths):
 def run_prompt_over_reports(
     prompt_filename: str,
     status: str,
-    pdf_paths,                      # <-- passed in by caller
-    user_input: str | None = None,):
-    
+    pdf_paths,  # passed in by caller
+    user_input: str | None = None,
+):
     prompt_text = load_prompt(prompt_filename)
     file_ids = upload_pdfs(pdf_paths)
 
@@ -74,11 +81,12 @@ Use replacements: "quotes", 'apostrophe', "...", "-", "CO2".
 def compare_reports(pdf_paths):
     return run_prompt_over_reports("CompareReports.txt", "Comparing reports...", pdf_paths)
 
+
 def keyword_analysis(pdf_paths, user_input: str):
-    return run_prompt_over_reports("KeyWordAnalysis.txt", "Running keyword analysis...", pdf_paths, user_input)
+    return run_prompt_over_reports(
+        "KeyWordAnalysis.txt", "Running keyword analysis...", pdf_paths, user_input
+    )
+
 
 def individual_analysis(pdf_paths):
     return run_prompt_over_reports("IndividualAnalysis.txt", "Running individual analyses...", pdf_paths)
-
-
-
