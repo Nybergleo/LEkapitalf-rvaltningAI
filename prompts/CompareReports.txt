@@ -14,7 +14,7 @@ JSON schema (must follow):
 {
 "meta": {
 "title": "<string>",
-"author": "<string>",
+"author": "LE kapitalförvaltning",
 "date": "<YYYY-MM-DD>"
 },
 "blocks": [

@@ -61,7 +61,7 @@ Use replacements: "quotes", 'apostrophe', "...", "-", "CO2".
 """.strip()
 
     response = client.responses.create(
-        model="gpt-5-mini",
+        model="gpt-5",
         input=[
             {"role": "system", "content": [{"type": "input_text", "text": system_text}]},
             {"role": "user", "content": content},
@@ -75,27 +75,10 @@ def compare_reports(pdf_paths):
     return run_prompt_over_reports("CompareReports.txt", "Comparing reports...", pdf_paths)
 
 def keyword_analysis(pdf_paths, user_input: str):
-    return run_prompt_over_reports("KeywordAnalysis.txt", "Running keyword analysis...", pdf_paths, user_input)
+    return run_prompt_over_reports("KeyWordAnalysis.txt", "Running keyword analysis...", pdf_paths, user_input)
 
 def individual_analysis(pdf_paths):
     return run_prompt_over_reports("IndividualAnalysis.txt", "Running individual analyses...", pdf_paths)
 
 
-def main():
-    print("Comparing reports")
-    compare_reports()
 
-    print("Key-words test")
-    user_input = "KEYWORDS TO ANALYZE:\n- pricing\n- volume\n- operating margin\n- order intake\n- free cash flow\n- guidance\n"
-    keyword_analysis(user_input)
-
-    print("Running individual analysis")
-    individual_analysis()
-
-
-
-
-
-
-if __name__ == "__main__":
-    main()

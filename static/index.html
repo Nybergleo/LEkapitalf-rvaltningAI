@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LE Report Analyzer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        
+        <div class="brand__title">
+          <h1>LE Report Analyzer</h1>
+          <p>Generate structured PDF analyses from financial reports</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main card -->
+    <main class="card">
+      <h2>Run analysis</h2>
+
+      <form action="/run" method="post" enctype="multipart/form-data">
+
+        <div class="field">
+          <label for="mode">Analysis type</label>
+          <select id="mode" name="mode">
+            <option value="compare">Compare reports</option>
+            <option value="keywords">Keyword analysis</option>
+            <option value="individual">
+              Individual analysis (multiple PDFs → ZIP)
+            </option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="keywords">Keywords</label>
+          <textarea
+            id="keywords"
+            name="keywords"
+            placeholder="One keyword per line"
+          ></textarea>
+          <div class="hint">
+            Only used for keyword analysis.
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="files">Upload PDF report(s)</label>
+          <input
+            id="files"
+            type="file"
+            name="files"
+            multiple
+            accept=".pdf"
+          >
+        </div>
+
+        <button type="submit">Run analysis</button>
+
+        <p class="footer-note">
+          Processing time depends on report length and number of files.
+        </p>
+
+      </form>
+    </main>
+
+  </div>
+
+</body>
+</html>

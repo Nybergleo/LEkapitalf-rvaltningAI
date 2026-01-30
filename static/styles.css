@@ -1,0 +1,166 @@
+/* Lundbergs-ish: calm, editorial, institutional */
+
+:root{
+  /* Brand: deep green (tweak after sampling their logo) */
+  --brand: #0f3d2e;
+
+  /* Neutrals */
+  --bg: #f6f5f3;          /* warm off-white */
+  --surface: #ffffff;
+  --text: #121212;
+  --muted: #4f4f4f;
+  --line: #dad7d2;
+
+  /* Layout */
+  --radius: 12px;
+  --shadow: 0 10px 24px rgba(0,0,0,.06);
+  --max: 980px;
+}
+
+*{ box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.45;
+}
+
+/* Page frame */
+.page{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 28px 18px 64px;
+}
+
+/* Top bar */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0 22px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 26px;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand__mark{
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--brand);
+}
+
+.brand__title{
+  display: grid;
+  gap: 2px;
+}
+
+.brand__title h1{
+  margin: 0;
+  font-weight: 650;
+  letter-spacing: .2px;
+  font-size: 1.1rem;
+}
+
+.brand__title p{
+  margin: 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+/* Main card */
+.card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+/* Subtle “section title” look */
+.card h2{
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: .2px;
+}
+
+/* Form fields */
+.field{
+  margin: 14px 0 16px;
+}
+
+label{
+  display: block;
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: .95rem;
+}
+
+.hint{
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* Inputs */
+select, textarea, input[type="file"]{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+textarea{
+  min-height: 120px;
+  resize: vertical;
+}
+
+select:focus, textarea:focus, input[type="file"]:focus{
+  outline: none;
+  border-color: rgba(15,61,46,.55);
+  box-shadow: 0 0 0 4px rgba(15,61,46,.12);
+}
+
+/* Primary button */
+button{
+  appearance: none;
+  border: 1px solid var(--brand);
+  background: var(--brand);
+  color: #fff;
+  border-radius: 999px;
+  padding: 11px 16px;
+  font-weight: 650;
+  letter-spacing: .2px;
+  cursor: pointer;
+  transition: transform .04s ease, opacity .12s ease;
+}
+
+button:hover{ opacity: .92; }
+button:active{ transform: translateY(1px); }
+
+/* Optional: “footer note” */
+.footer-note{
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+/* Responsive */
+@media (max-width: 640px){
+  .card{ padding: 16px; }
+  .brand__title p{ display: none; }
+}

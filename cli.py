@@ -4,7 +4,7 @@ from pathlib import Path
 
 from tqdm import tqdm
 
-from AI_test import compare_reports, keyword_analysis, individual_analysis
+from analysis_client import compare_reports, keyword_analysis, individual_analysis
 from json_to_pdf_via_latex import write_pdf_from_json_text
 
 OUT_DIR = Path("./out")
